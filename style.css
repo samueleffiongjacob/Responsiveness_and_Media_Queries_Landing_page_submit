@@ -5,23 +5,43 @@
 a {
     text-decoration: none;
 }
-
+.hold{
+    background-color: rgb(235, 222, 222);
+}
 body {
     font-family: "Poppins", "Open-Sans", sans-serif;
     font-size: 18px;
+    max-width: 1440px;
+    min-width: 375px;
+    margin: auto;
 }
 
+button {
+    font-family: 'Open Sans';
+    font-weight: 400px 700px;
+}
+/* PAGE CONTAINER */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 75%;
+    margin: 0px auto;
+    border-radius: 1px;
 
+}
 /* HEADER */
 
 header {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    background: url("bg-hero-desktop.svg");
-    background-size: cover;
+    background-color: #e3f7fe;
+    background-image: url(images/bg-hero-desktop.svg);
+    background-size: 100%;
+    background-position: fixed;
     background-repeat: no-repeat;
-    padding: 30px;
+    
+    /* height: 10%; */
 }
 
 #flow-conversation {
@@ -34,19 +54,61 @@ nav {
     justify-content: space-between;
 }
 
-.try-free {
-    background: white;
-    padding: 10px 30px;
-    border-radius: 7px;
-    box-shadow: 2px 1px 1px 2px hsl(208, 11%, 55%);
-    color: black;
-}
-
 .header-section {
     display: flex;
     gap: 20px;
     justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
 }
+
+
+.try-free {
+    background: white;
+    padding: 1px 15px;
+    border-radius: 7px;
+    box-shadow: 1px 2px 2px #888888;;
+    color: black;
+    margin-right: 50px;
+    font-size: 10px;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 15%;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.huddle-image {
+    height: 20px;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    
+}
+
+#head>h4{
+    font-size: 150%;
+    line-height: 40px;
+    color:hsl(192, 100%, 9%) ;
+}
+
+#head>p{
+    font-size:12px ;
+    line-height: 20px;
+    color: hsl(192, 100%, 9%);
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.heading-image{
+    width: 55%;
+}
+
+
 
 .pink-button {
     background: hsl(322, 100%, 66%);
@@ -62,7 +124,7 @@ nav {
 main {
     height: 70%;
     display: flex;
-    gap: 60px;
+    gap: 30px;
     flex-direction: column;
     margin: 60px 0px;
     padding: 10px;
@@ -75,35 +137,85 @@ main {
     border-radius: 5px;
     align-items: center;
     box-shadow: 2px 1px 1px 2px hsl(208, 11%, 55%);
+    width: 90%;
+    margin:0 auto;
+
 }
 
-.main-image {
-    height: 100%;
-    width: 70%;
+
+
+#page>h2{
+    font-size: 100%;
+    line-height: 40px;
+    color:hsl(192, 100%, 9%) ;
+    margin-left: 70px;
+    margin-top: 50px;
+    opacity: 0.9;
+}
+#page2>h2{
+    font-size: 100%;
+    line-height: 40px;
+    color: hsl(192, 100%, 9%);
+    margin-right: 50px;
+    margin-left: 65px;
+    margin-top: 50px;
+    opacity: 0.9;
 }
 
-.heading-image {
-    height: 300px;
-    width: 300px;
+#page>p{
+    font-size: 12px;
+    line-height: 20px;
+    color: hsl(192, 100%, 9%);
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: 70px;
+    opacity: 0.7;
 }
 
-.logo-image {
-    height: 30px;
-    width: 100px;
+#page2>p{
+    font-size: 12px;
+    line-height: 20px;
+    color: hsl(192, 100%, 9%);
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+    margin-left: 70px;
+    opacity: 0.7;
+    
 }
+#position{
+    margin-left: 160px;
+    margin-right: 3px;
+    height: 80%;
+    width: 30%;
+}
+#position2{
+    margin-left: 10px;
+    margin-right: 60px;
+    height: 80%;
+    width: 30%;
+}
+#position3{
+    margin-left: 160px;
+    margin-right: 15px;
+    height: 80%;
+    width: 30%;
+}
+
 
 .get-started {
     display: flex;
     flex-direction: column;
     place-items: center center;
     position: relative;
-    top: 280px;
-    margin-left: 300px;
-    margin-right: 300px;
+    top: 50px;
+    margin-left: 250px;
+    margin-right: 250px;
     background: white;
     border-radius: 10px;
     padding: 20px 10px;
     box-shadow: 2px 1px 1px 2px hsl(208, 11%, 55%);
+    width: 400%;
 }
 
 
@@ -112,34 +224,47 @@ main {
 footer {
     display: flex;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 5px;
     padding: 50px 10px 0px;
     justify-content: space-between;
-    gap: 30px;
+    gap: 10px;
     background: hsl(192, 100%, 9%);
     color: white;
-    height: 10%;
+    width: 100%;
+    padding-bottom: 30px;
 }
 
 .footer-logo {
     background: white;
-    width: 120px;
+    width: 15%;
     padding: 5px 10px;
     border-radius: 10px;
+    margin-top: 70px;
+    margin-left: 75px;
+    margin-bottom: -5px;
 }
 
-.svg-icon {
-    background: white;
-    border-radius: 100%;
-    padding: 3px 5px;
+
+
+.fa {
+    padding: 20px;
+    text-align: center;
+    margin: 5px 2px;
+    font-size: 30px;
+    width: 50px;
 }
 
-.socials {
-    background: white;
-    padding: 5px 10px;
-    border-radius: 100%;
+.fa-facebook {
+    color: white;
 }
 
+.fa-twitter {
+    color: white;
+}
+
+.fa-instagram {
+    color: white;
+}
 .social-connect {
     display: flex;
     gap: 20px;
@@ -148,17 +273,26 @@ footer {
 
 .first-footer {
     display: flex;
-    gap: 20px;
+    gap: 5px;
     align-items: center;
     margin: 20px;
+    font-size: 45%;
+    margin-left: 70px;
+    font-weight: lighter;
+    line-height: 15px;
+}
+.margin{
+    margin-left: 10px;
 }
 
 .other-info {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 10px;
+    display: flex;
     place-items: center center;
+    gap: 80px;
+    font-size: 50%;
+    margin-left: 40px;
+    margin-right: 80px;
+    font-weight: lighter;
 }
 
 .third-social {
@@ -168,11 +302,12 @@ footer {
     text-align: center;
 }
 
-.social-icons {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
+.foot{
+    font-size: 50%;
+    font-weight: lighter;
 }
+
+
 
 
 /* MEDIA */
@@ -220,7 +355,7 @@ footer {
         box-shadow: 2px 1px 1px 2px hsl(208, 11%, 55%);
         text-align: center;
     }
-    .main-image {
+        #position,#position2,#position3{
         height: 70%;
         width: 40%;
     }
