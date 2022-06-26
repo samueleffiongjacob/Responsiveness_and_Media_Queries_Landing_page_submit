@@ -270,6 +270,10 @@ footer {
     gap: 20px;
     justify-content: space-between;
 }
+a:hover {
+    background-color: rgb(60, 129, 239);
+    color: black;
+}
 
 .first-footer {
     display: flex;
